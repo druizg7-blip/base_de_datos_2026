@@ -1,0 +1,5 @@
+CREATE USER c##antonio IDENTIFIED BY antonio;
+GRANT DBA TO c##antonio;
+GRANT CONNECT TO c##antonio;
+GRANT ALL PRIVILEGES TO c##antonio;
+GRANT UNLIMITED TABLESPACE TO c##antonio;
