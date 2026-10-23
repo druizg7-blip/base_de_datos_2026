@@ -1,0 +1,78 @@
+{
+  "table": "EMPLEADO_PUESTO",
+  "path": "/catalogos/empleados",
+  "pk": "ID_EMPLEADO_PUESTO",
+  "columns": [
+    {
+      "name": "ID_EMPLEADO_PUESTO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_EMPLEADO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "EMPLEADO"
+    },
+    {
+      "name": "ID_PUESTO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "PUESTO"
+    },
+    {
+      "name": "FECHA_INICIO",
+      "type": "DATE",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_FIN",
+      "type": "DATE",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Empleado Puesto"
+}

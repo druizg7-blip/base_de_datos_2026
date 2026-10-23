@@ -1,0 +1,71 @@
+{
+  "table": "MENU",
+  "path": "/admin/roles",
+  "pk": "ID_MENU",
+  "columns": [
+    {
+      "name": "ID_MENU",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_MODULO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "MODULO"
+    },
+    {
+      "name": "NOMBRE",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ORDEN",
+      "type": "NUMBER(3)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Menu"
+}

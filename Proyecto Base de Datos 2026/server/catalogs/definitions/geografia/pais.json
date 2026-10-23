@@ -1,0 +1,71 @@
+{
+  "table": "PAIS",
+  "path": "/catalogos/departamentos",
+  "pk": "ID_PAIS",
+  "columns": [
+    {
+      "name": "ID_PAIS",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_MONEDA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "MONEDA"
+    },
+    {
+      "name": "NOMBRE",
+      "type": "VARCHAR2(60)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "CODIGO_ISO",
+      "type": "CHAR(2)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Pais"
+}

@@ -1,0 +1,127 @@
+{
+  "table": "ENVIO",
+  "path": "/envios/gestion",
+  "pk": "ID_ENVIO",
+  "columns": [
+    {
+      "name": "ID_ENVIO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_EMPLEADO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "EMPLEADO"
+    },
+    {
+      "name": "ID_DEPARTAMENTO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "DEPARTAMENTO"
+    },
+    {
+      "name": "ID_SUCURSAL",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "SUCURSAL"
+    },
+    {
+      "name": "ID_FACTURA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "FACTURA"
+    },
+    {
+      "name": "ID_VEHICULO",
+      "type": "INTEGER",
+      "required": false,
+      "default": false,
+      "reference": "VEHICULO"
+    },
+    {
+      "name": "FECHA_ENVIO",
+      "type": "DATE",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_ENTREGA",
+      "type": "DATE",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DIRECCION_ENTREGA",
+      "type": "VARCHAR2(250)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "NOMBRE_PILOTO",
+      "type": "VARCHAR2(100)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "TRANSPORTA_CLIENTE",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "ESTADO",
+      "type": "VARCHAR2(20)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Envio"
+}

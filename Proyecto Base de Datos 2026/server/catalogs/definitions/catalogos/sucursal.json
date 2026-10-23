@@ -1,0 +1,78 @@
+{
+  "table": "SUCURSAL",
+  "path": "/catalogos/sucursales",
+  "pk": "ID_SUCURSAL",
+  "columns": [
+    {
+      "name": "ID_SUCURSAL",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_DEPARTAMENTO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "DEPARTAMENTO"
+    },
+    {
+      "name": "NOMBRE",
+      "type": "VARCHAR2(80)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DIRECCION",
+      "type": "VARCHAR2(200)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "TELEFONO",
+      "type": "VARCHAR2(20)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Sucursal"
+}

@@ -1,0 +1,11 @@
+"use strict";
+const router=require("express").Router();
+const S=require("./security");
+const {connection,oracledb}=require("./db");
+const {numeroId}=require("./guarantees/shared");
+const wrap=fn=>(req,res,next)=>Promise.resolve(fn(req,res,next)).catch(next);
+const deps={S,connection,oracledb,wrap,numeroId};
+require("./guarantees/registro")(router,deps);
+require("./guarantees/seguimiento")(router,deps);
+require("./guarantees/reemplazos")(router,deps);
+module.exports=router;

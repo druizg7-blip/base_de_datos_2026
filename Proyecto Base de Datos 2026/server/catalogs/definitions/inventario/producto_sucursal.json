@@ -1,0 +1,85 @@
+{
+  "table": "PRODUCTO_SUCURSAL",
+  "path": "/inventario/existencias",
+  "pk": "ID_PRODUCTO_SUCURSAL",
+  "columns": [
+    {
+      "name": "ID_PRODUCTO_SUCURSAL",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_SUCURSAL",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "SUCURSAL"
+    },
+    {
+      "name": "ID_PRODUCTO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "PRODUCTO"
+    },
+    {
+      "name": "EXISTENCIA",
+      "type": "NUMBER(12,2)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "EXISTENCIA_MINIMA",
+      "type": "NUMBER(12,2)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "UBICACION_BODEGA",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Producto Sucursal"
+}

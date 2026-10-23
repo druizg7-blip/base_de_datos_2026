@@ -1,0 +1,92 @@
+{
+  "table": "ROL_OPCION",
+  "path": "/admin/roles",
+  "pk": "ID_ROL_OPCION",
+  "columns": [
+    {
+      "name": "ID_ROL_OPCION",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_ROL",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "ROL"
+    },
+    {
+      "name": "ID_OPCION",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "OPCION"
+    },
+    {
+      "name": "PUEDE_CONSULTAR",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "PUEDE_INSERTAR",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "PUEDE_ACTUALIZAR",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "PUEDE_ELIMINAR",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Rol Opcion"
+}

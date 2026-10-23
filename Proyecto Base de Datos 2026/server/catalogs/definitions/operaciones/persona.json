@@ -1,0 +1,106 @@
+{
+  "table": "PERSONA",
+  "path": "/catalogos/clientes",
+  "pk": "ID_PERSONA",
+  "columns": [
+    {
+      "name": "ID_PERSONA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "NOMBRES",
+      "type": "VARCHAR2(100)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "APELLIDOS",
+      "type": "VARCHAR2(100)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "NIT",
+      "type": "VARCHAR2(20)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DOCUMENTO_IDENTIDAD",
+      "type": "VARCHAR2(25)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_NACIMIENTO",
+      "type": "DATE",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "TELEFONO",
+      "type": "VARCHAR2(20)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "CORREO",
+      "type": "VARCHAR2(100)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DIRECCION",
+      "type": "VARCHAR2(200)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Persona"
+}

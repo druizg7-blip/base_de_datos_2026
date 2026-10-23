@@ -1,0 +1,140 @@
+@media (max-width: 1180px) {
+  .kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .form-grid.four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .site-nav {
+    gap: 19px;
+  }
+}
+@media (max-width: 870px) {
+  .site-header-inner {
+    min-height: 66px;
+    padding: 0 19px;
+  }
+  .site-name {
+    font-size: 14px;
+    max-width: 55%;
+  }
+  .account-actions {
+    gap: 13px;
+  }
+  .menu-mobile {
+    display: inline-block;
+  }
+  .nav-wrapper {
+    display: none;
+  }
+  .nav-wrapper.mobile-open {
+    display: block;
+  }
+  .site-nav {
+    display: block;
+    padding: 9px 19px 17px;
+    min-height: 0;
+    max-height: 65vh;
+    overflow-y: auto;
+  }
+  .nav-group {
+    position: static;
+  }
+  .nav-home,
+  .nav-category {
+    height: auto;
+    min-height: 39px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    padding: 10px 0;
+  }
+  .nav-home.active,
+  .nav-category.active,
+  .nav-category[aria-expanded="true"] {
+    border-bottom: 0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+  .nav-dropdown {
+    position: static;
+    box-shadow: none;
+    border: 0;
+    border-left: 1px solid #bbb;
+    padding: 2px 0 5px;
+    max-height: none;
+    min-width: 0;
+    margin: 0 0 7px 3px;
+  }
+  .nav-link {
+    padding: 9px 15px;
+  }
+  .form-grid,
+  .form-grid.two,
+  .form-grid.four,
+  .line-card .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .double-panel {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    padding: 24px 17px 40px;
+  }
+  .topbar {
+    min-height: 88px;
+    padding: 16px 19px;
+  }
+  .modal {
+    padding: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .kpis {
+    grid-template-columns: 1fr;
+  }
+  .site-name {
+    max-width: 47%;
+    font-size: 12px;
+  }
+  .account-actions {
+    gap: 10px;
+  }
+  .account-name {
+    display: none;
+  }
+  .logout-button,
+  .menu-mobile {
+    font-size: 11px;
+  }
+  .login-panel {
+    padding: 25px 23px;
+  }
+  .login-brand {
+    padding: 25px 23px 18px;
+  }
+  .content-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .topbar h1 {
+    font-size: 24px;
+  }
+}
+@media (max-height: 680px) {
+  .login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

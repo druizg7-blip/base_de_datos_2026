@@ -1,0 +1,99 @@
+{
+  "table": "PROVEEDOR",
+  "path": "/catalogos/proveedores",
+  "pk": "ID_PROVEEDOR",
+  "columns": [
+    {
+      "name": "ID_PROVEEDOR",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_PAIS",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "PAIS"
+    },
+    {
+      "name": "NOMBRE",
+      "type": "VARCHAR2(100)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "NIT",
+      "type": "VARCHAR2(20)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "TELEFONO",
+      "type": "VARCHAR2(20)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "CORREO",
+      "type": "VARCHAR2(100)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DIRECCION",
+      "type": "VARCHAR2(200)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DIAS_CREDITO",
+      "type": "NUMBER(3)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Proveedor"
+}

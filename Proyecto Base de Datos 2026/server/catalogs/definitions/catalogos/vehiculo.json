@@ -1,0 +1,92 @@
+{
+  "table": "VEHICULO",
+  "path": "/catalogos/vehiculos",
+  "pk": "ID_VEHICULO",
+  "columns": [
+    {
+      "name": "ID_VEHICULO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_SUCURSAL",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "SUCURSAL"
+    },
+    {
+      "name": "PLACA",
+      "type": "VARCHAR2(15)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "TIPO_PLACA",
+      "type": "VARCHAR2(20)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "MARCA",
+      "type": "VARCHAR2(40)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "MODELO",
+      "type": "VARCHAR2(40)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "CAPACIDAD_CARGA",
+      "type": "NUMBER(10,2)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Vehiculo"
+}

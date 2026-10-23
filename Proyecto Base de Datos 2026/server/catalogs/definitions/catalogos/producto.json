@@ -1,0 +1,106 @@
+{
+  "table": "PRODUCTO",
+  "path": "/catalogos/productos",
+  "pk": "ID_PRODUCTO",
+  "columns": [
+    {
+      "name": "ID_PRODUCTO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_CATEGORIA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "CATEGORIA"
+    },
+    {
+      "name": "ID_MARCA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "MARCA"
+    },
+    {
+      "name": "CODIGO",
+      "type": "VARCHAR2(30)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "NOMBRE",
+      "type": "VARCHAR2(120)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "DESCRIPCION",
+      "type": "VARCHAR2(300)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "UNIDAD_MEDIDA",
+      "type": "VARCHAR2(20)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "PRECIO_COSTO",
+      "type": "NUMBER(12,2)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "PRECIO_VENTA",
+      "type": "NUMBER(12,2)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Producto"
+}

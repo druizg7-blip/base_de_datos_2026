@@ -1,0 +1,92 @@
+{
+  "table": "GARANTIA",
+  "path": "/ventas/garantias",
+  "pk": "ID_GARANTIA",
+  "columns": [
+    {
+      "name": "ID_GARANTIA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_EMPLEADO",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "EMPLEADO"
+    },
+    {
+      "name": "ID_FACTURA",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "FACTURA"
+    },
+    {
+      "name": "ID_NOTA_CREDITO",
+      "type": "INTEGER",
+      "required": false,
+      "default": false,
+      "reference": "NOTA_CREDITO"
+    },
+    {
+      "name": "FECHA_RECLAMO",
+      "type": "DATE",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO",
+      "type": "VARCHAR2(20)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "OBSERVACIONES",
+      "type": "VARCHAR2(300)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Garantia"
+}

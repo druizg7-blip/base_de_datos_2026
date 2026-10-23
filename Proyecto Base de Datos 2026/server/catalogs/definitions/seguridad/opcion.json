@@ -1,0 +1,78 @@
+{
+  "table": "OPCION",
+  "path": "/admin/roles",
+  "pk": "ID_OPCION",
+  "columns": [
+    {
+      "name": "ID_OPCION",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ID_MENU",
+      "type": "INTEGER",
+      "required": true,
+      "default": false,
+      "reference": "MENU"
+    },
+    {
+      "name": "NOMBRE",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "RUTA",
+      "type": "VARCHAR2(200)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ORDEN",
+      "type": "NUMBER(3)",
+      "required": true,
+      "default": true,
+      "reference": null
+    },
+    {
+      "name": "FECHA_CREACION",
+      "type": "TIMESTAMP",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_CREACION",
+      "type": "VARCHAR2(50)",
+      "required": true,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "FECHA_MODIFICACION",
+      "type": "TIMESTAMP",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "USUARIO_MODIFICACION",
+      "type": "VARCHAR2(50)",
+      "required": false,
+      "default": false,
+      "reference": null
+    },
+    {
+      "name": "ESTADO_REGISTRO",
+      "type": "CHAR(1)",
+      "required": true,
+      "default": false,
+      "reference": null
+    }
+  ],
+  "label": "Opcion"
+}
